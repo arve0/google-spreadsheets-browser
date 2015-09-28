@@ -1,0 +1,17 @@
+{
+  "name": "google-spreadsheets-browser",
+  "version": "0.0.1",
+  "description": "browserified google-spreadsheets",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "browserify index.js -o gs-browserified.js && uglifyjs gs-browserified.js > gs-browserified.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arve Seljebu",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "*",
+    "google-spreadsheets": "*",
+    "uglifyjs": "*"
+  }
+}
